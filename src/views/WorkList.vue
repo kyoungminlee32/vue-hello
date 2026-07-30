@@ -44,6 +44,22 @@
             <table class="dataTable compact">
                 <tbody>
                     <tr>
+                        <td class="lv2">영화</td>
+                        <td class="lv3"></td>
+                        <td class="lv4"></td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                             <a href="./movie" class="linked" target="_blank">영화</a>
+                        </td>
+                        <td class="user">이경민</td>
+                        <td class="date"><span></span></td>
+                        <td class="cf1"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
                         <td class="lv2">A타입 인터랙션</td>
                         <td class="lv3"></td>
                         <td class="lv4"></td>
@@ -52,7 +68,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <router-link to="/prototype/A-type/html/A-type">A타입인터랙션 샘플11</router-link>
+                             <a href="./prototype/A-type/html/A-type" class="linked" target="_blank">A타입인터랙션 샘플</a>
                         </td>
                         <td class="user">이경민</td>
                         <td class="date"><span></span></td>
