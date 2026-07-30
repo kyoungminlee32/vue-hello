@@ -21,7 +21,7 @@
 		:data="data_temp"
 		@searchMovie="filterMovies($event)"
 	/>
-	<p>
+	<p class="btnAll">
 		<button @click="showAllMove">전체보기</button>
 	</p>
 	<!-- 영화정보 -->
@@ -125,6 +125,7 @@ export default {
 * {
 	box-sizing: border-box;
 	margin: 0;
+	
 }
 body {
 	max-width: 768px;
@@ -137,6 +138,10 @@ h1, h2, h3 {
 p {
 	margin-bottom: 0.5rem;
 }
-
+.btnAll {
+	text-align: right;
+	margin-bottom: 20px;
+	padding:0 2rem;
+}
 </style>
 

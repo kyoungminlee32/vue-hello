@@ -29,8 +29,9 @@ img {max-width:100%; vertical-align:top;}
 button {cursor:pointer;}
 
 html {font-size:62.5%;}
-body {width:100%; min-width:1280px; font-size:1.5rem; line-height:1.5; font-family:'pretendard','MalgunGothic', 'AppleGothic', sans-serif; letter-spacing:-0.025em; background-color:var(--bg);}
+body {width:100%; font-size:1.5rem; line-height:1.5; font-family:'pretendard','MalgunGothic', 'AppleGothic', sans-serif; letter-spacing:-0.025em; background-color:var(--bg);}
 body.lock {overflow:hidden}
+body.is-worklist {min-width:1280px;}
 
 body::-webkit-scrollbar {width:1rem; height:1rem; border-radius:.2rem;background-color:var(--bg);}
 body::-webkit-scrollbar-thumb {border-radius:2rem;background-color:#ccc}
@@ -201,7 +202,7 @@ input{padding:0 0 0 4px;min-height:28px;font-family:'Malgun Gothic',돋움;font-
 .skipNav a:focus{margin-top:0;text-decoration:underline;color:#fff}
 
 header{font-size:14px;font-weight:bold}
-header .title{display:flex;justify-content:space-between;align-items:center;width:100%;padding:10px 20px;height:50px;background-color:#1d1f22;color:#fff}
+.is-worklist header .title{display:flex;justify-content:space-between;align-items:center;width:100%;padding:10px 20px;height:50px;background-color:#1d1f22;color:#fff}
 header .title .search *{font-size:12px}
 header .nhLogo{width:140px}
 .headerTit{margin-left:10px;font-size:16px}

@@ -101,7 +101,7 @@ p.label {color:var(--font2);}
 .title-group .unit{font-size:1.3rem;color:var(--F04) ;}
 .label .i {vertical-align:0.6rem;}
 .label.-lg {font-size: 2.3rem; color:var(--font2); margin-bottom:2.6rem; margin-top:1.6rem; font-weight: bold;}
-.switch.-sm input {width:4rem; height:2.4rem; }
+.switch.-sm input {width:4rem; height:2.4rem; -webkit-appearance: none;}
 .switch.-sm label {height:2.4rem; padding-left:4.6rem; font-size:1.4rem; line-height:2rem;}
 .switch.-sm label:before {width:4rem; height:2.4rem;}
 .switch.-sm label:after {width:2rem; height:2rem;}

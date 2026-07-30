@@ -314,7 +314,7 @@
 .tooltip > .trigger {position:absolute; top:50%; left:0; width:2.4rem; height:2.4rem; background:url(../imgs/ico/common/ico-tooltip.png) no-repeat 0 / cover; transform:translateY(-50%);}
 /* .dark-mode .tooltip > .trigger {position:absolute; top:50%; left:0; width:2.4rem; height:2.4rem; background:url(../imgs/ico/common/ico-tooltip_dk.png) no-repeat 0 / cover; transform:translateY(-50%);} */
 .tooltip > .panel {display:none; position:absolute; top:1.6rem; left:0; z-index: 10; padding:2.2rem 2rem; border:1px solid var(--line2); border-radius:1.6rem; background-color:var(--bg-root); color:var(--font2); font-style:normal; font-weight:normal; font-size:1.4rem; line-height:1.5; text-decoration:none; text-align:left; box-shadow:0 0.2rem .8rem rgba(0,0,0,.05);}
-.tooltip.-active > .panel {display:block; z-index:90;}
+.tooltip.-active > .panel {display:block; z-index:90;white-space: nowrap;}
 .tooltip.-reversed > .panel {top:auto; bottom: 1.7rem;}
 .tooltip > .panel > .title {display:block; margin-bottom:1.2rem; color:var(--font1); font-weight:bold; font-size:1.6rem; padding-right:2.4rem;}
 .tooltip > .panel > .t-content {display: block; padding-right:2.8rem;}

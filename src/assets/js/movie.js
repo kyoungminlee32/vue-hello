@@ -6,7 +6,7 @@ const exdata = [
         category: "드라마",
         textRed: "color: #f00",
         like: 0,
-        imgUrl: "/assets/images/movie1.webp",
+        imgUrl: "./assets/images/movie1.webp",
     },
     {
         id: 1,
@@ -15,7 +15,7 @@ const exdata = [
         category: "액션",
         textRed: "color: red",
         like: 0,
-        imgUrl: "/assets/images/movie2.avif",
+        imgUrl: "./assets/images/movie2.avif",
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const exdata = [
         category: "드라마",
         textRed: "color: #f00",
         like: 0,
-        imgUrl: "/assets/images/movie3.avif",
+        imgUrl: "./assets/images/movie3.avif",
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const exdata = [
         category: "액션",
         textRed: "color: red",
         like: 0,
-        imgUrl: "/assets/images/movie4.jpg",
+        imgUrl: "./assets/images/movie4.jpg",
     },
 ]
 

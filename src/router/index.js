@@ -5,7 +5,8 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import(/* webpackChunkName: "about" */ '../views/WorkList.vue')
+    meta: { bodyClass: 'is-worklist' },
+    component: () => import(/* webpackChunkName: "about" */ '../worklist/WorkList.vue')
   },
   {
     path: '/about',
@@ -23,7 +24,7 @@ const routes = [
   {
     path: '/WorkList',
     name: 'WorkList',
-     component: () => import(/* webpackChunkName: "worklist" */ '../views/WorkList.vue')
+     component: () => import(/* webpackChunkName: "worklist" */ '../worklist/WorkList.vue')
   },
   {
     path: '/prototype/A-type/html/A-type',
@@ -142,6 +143,19 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+
+// 페이지 이동이 완료된 후 실행되는 훅
+router.afterEach((to, from) => {
+  // 1. 이전 페이지의 body 클래스가 있다면 제거
+  if (from.meta && from.meta.bodyClass) {
+    document.body.classList.remove(from.meta.bodyClass)
+  }
+  
+  // 2. 이동한 새 페이지의 body 클래스가 있다면 추가
+  if (to.meta && to.meta.bodyClass) {
+    document.body.classList.add(to.meta.bodyClass)
+  }
 })
 
 export default router

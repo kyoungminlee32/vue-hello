@@ -52,25 +52,31 @@ export default {
 </script>
 
 <style>
+.movie {
+	padding:0 2rem;
+}
 .bg-yellow {
 	background-color:#ff0;
 	padding: 10px;
 }
-button {
+.movie button,.btnAll button,.btns button,.modal button{
 	margin-right: 10px;
 	padding-inline: 10px;
 	border:1px solid #333;
 	border-radius: 5px;
 	margin-top: 10px;
 }
-.item {
+.btnAll button {
+    margin-right:0;
+}
+.movie .item {
 	width: 100%;
 	border: 1px solid #ccc;
 	display: flex;
 	margin-bottom: 20px;
 	padding: 1rem;
 }
-.item figure {
+.movie .item figure {
 	width: 30%;
 	margin-right: 1rem;
 	padding: 10px;
@@ -78,21 +84,22 @@ button {
     background-color: #f0f0f0;
     border-radius: 10px;
 }
-.item img {
+.movie .item img {
 	width: 100%;
     border-radius: 10px;
 }
-.item .info {
+.movie .item .info {
 	width: 100%;
+    min-height: 70rem;
     position: relative;
 }
-.item .info p {
+.movie .item .info p {
     margin-top: 2rem;
 }
-.item .info p + p {
+.movie .item .info p + p {
     margin-top: 0.5rem;
 }
-.item .info .btns {
+.movie .item .info .btns {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,14 +107,37 @@ button {
     bottom: 0;
     width: 100%;
 }
-.item .info .btns span {
+.movie .item .info .btns span {
     flex:1;
     margin-top: 10px;
 
+}
+.movie .item .info .btns p {
+    margin-top: 0;
 }
 .foods {
     background-color: #f0f0f0;
     padding: 10px;
     margin-bottom: 10px;
+}
+@media (max-width: 430px) {
+    .movie {
+        padding: 0 2rem;
+    }
+    .movie .item {
+        flex-direction: column;
+    }
+    .movie .item figure {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .movie .item .info {
+        width: 100%;
+        min-height: 30rem;
+    }
+    .movie .item figure + .info {
+        margin-top: 1rem;
+    }
 }
 </style>

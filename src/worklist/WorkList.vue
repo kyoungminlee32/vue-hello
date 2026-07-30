@@ -52,7 +52,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                             <a href="./movie" class="linked" target="_blank">영화</a>
+                             <router-link to="/movie" class="linked">영화</router-link>
                         </td>
                         <td class="user">이경민</td>
                         <td class="date"><span></span></td>
@@ -68,7 +68,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                             <a href="./prototype/A-type/html/A-type" class="linked" target="_blank">A타입인터랙션 샘플</a>
+                             <router-link to="./prototype/A-type/html/A-type" class="linked">A타입인터랙션 샘플</router-link>
                         </td>
                         <td class="user">이경민</td>
                         <td class="date"><span></span></td>
@@ -84,7 +84,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./prototype/A-type/html/A-type-2" class="linked" target="_blank">A타입인터랙션 샘플2</a>
+                            <router-link to="./prototype/A-type/html/A-type-2" class="linked">A타입인터랙션 샘플2</router-link>
                         </td>
                         <td class="user">이경민</td>
                         <td class="date"><span></span></td>
@@ -100,7 +100,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./prototype/B-type/html/B-type" class="linked" target="_blank">B타입인터랙션 샘플</a>
+                            <router-link to="./prototype/B-type/html/B-type" class="linked">B타입인터랙션 샘플</router-link>
                         </td>
                         <td class="user">이경민</td>
                         <td class="date"><span></span></td>
@@ -116,7 +116,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./html/_FW/fw_product_detail" class="linked" target="_blank">템플릿</a>
+                            <router-link to="./html/_FW/fw_product_detail" class="linked">템플릿</router-link>
                         </td>
                         <td class="user">이경민</td>
                         <td class="date"><span>260721</span></td>
@@ -132,7 +132,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./html/_PD/FMDC-temp" class="linked" target="_blank">FMDC-temp</a>
+                            <router-link to="./html/_PD/FMDC-temp" class="linked">FMDC-temp</router-link>
                         </td>
                         <td class="user">이경민</td>
                         <td class="date">260721</td>
@@ -148,7 +148,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./html/_PD/FMHA-temp" class="linked" target="_blank">FMHA-temp</a>
+                            <router-link to="./html/_PD/FMHA-temp" class="linked">FMHA-temp</router-link>
                          </td>
                         <td class="user">이경민</td>
                         <td class="date">260721</td>
@@ -164,7 +164,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./html/UD/FMAA-0100000000F01-B" class="linked" target="_blank">FMAA-0100000000F01-B</a>
+                            <router-link to="./html/UD/FMAA-0100000000F01-B" class="linked">FMAA-0100000000F01-B</router-link>
                          </td>
                         <td class="user">이경민</td>
                         <td class="date">260721</td>
@@ -180,7 +180,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./html/UD/FMAA-0200000000F01-B" class="linked" target="_blank">FMAA-0200000000F01-B</a>
+                            <router-link to="./html/UD/FMAA-0200000000F01-B" class="linked">FMAA-0200000000F01-B</router-link>
                          </td>
                         <td class="user">이경민</td>
                         <td class="date">260721</td>
@@ -196,7 +196,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./html/UD/FMAA-0300000000F01-B" class="linked" target="_blank">FMAA-0300000000F01-B</a>
+                            <router-link to="./html/UD/FMAA-0300000000F01-B" class="linked">FMAA-0300000000F01-B</router-link>
                          </td>
                         <td class="user">이경민</td>
                         <td class="date">260721</td>
@@ -212,7 +212,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./html/UD/FMAA-0400000000F01-B" class="linked" target="_blank">FMAA-0400000000F01-B</a>
+                            <router-link to="./html/UD/FMAA-0400000000F01-B" class="linked">FMAA-0400000000F01-B</router-link>
                          </td>
                         <td class="user">이경민</td>
                         <td class="date">260721</td>
@@ -228,7 +228,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./html/FU/FMEC-0103030100F01-A" class="linked" target="_blank">FMEC-0103030100F01-A</a>
+                            <router-link to="./html/FU/FMEC-0103030100F01-A" class="linked">FMEC-0103030100F01-A</router-link>
                          </td>
                         <td class="user">김종익</td>
                         <td class="date">260721</td>
@@ -244,7 +244,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./html/MM/FMBB-0400000000F01" class="linked" target="_blank">FMBB-0400000000F01</a>
+                            <router-link to="./html/MM/FMBB-0400000000F01" class="linked">FMBB-0400000000F01</router-link>
                          </td>
                         <td class="user">이경민</td>
                         <td class="date">260721</td>
@@ -260,7 +260,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./html/MM/FMBB-0500000000F01" class="linked" target="_blank">FMBB-0500000000F01</a>
+                            <router-link to="./html/MM/FMBB-0500000000F01" class="linked">FMBB-0500000000F01</router-link>
                          </td>
                         <td class="user">이경민</td>
                         <td class="date">260721</td>
@@ -276,7 +276,7 @@
                         <td class="lv7"></td>
                         <td class="func">
                             <input type="radio" class="iframe-select" name="iframename">
-                            <a href="./html/MM/FMBB-0700000000F01" class="linked" target="_blank">FMBB-0700000000F01</a>
+                            <router-link to="./html/MM/FMBB-0700000000F01" class="linked">FMBB-0700000000F01</router-link>
                          </td>
                         <td class="user">이경민</td>
                         <td class="date">260721</td>

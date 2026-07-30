@@ -68,10 +68,11 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
-        padding: 10px;
+        padding: 2rem;
+        white-space: nowrap;
     }
     .searchBox input {
-        width: 300px;
+        width: calc(100% - 13rem);
         height: 30px;
         padding: 5px;
         border-radius: 5px;
@@ -86,5 +87,10 @@
         padding-inline: 10px;
         border:1px solid #333;
         border-radius: 5px;
+    }
+    @media (max-width: 430px) {
+        .searchBox {
+            justify-content: space-between;
+        }
     }
 </style>
