@@ -129,7 +129,7 @@ export default {
 html,
 body {
   /* 클릭/스크롤은 허용하되, 더블 탭 확대 및 핀치 줌 제스처를 비활성화합니다 */
-  touch-action: manipulation;
+  touch-action: none;
 }
 body {
   max-width: 768px;
