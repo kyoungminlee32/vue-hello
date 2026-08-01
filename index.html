@@ -1,16 +1,41 @@
 <!doctype html><html lang=""><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/><link rel="icon" href="/vue-hello/favicon.ico"/><title>vue-hello</title><script>/* =======================================================
-       * 📱 iOS 사파리 전역 더블 탭 확대 및 핀치 줌 완벽 차단 스크립트
+       * 📱 iOS 사파리 전역 더블 탭 확대 & 튕김 스크롤 완벽 차단
        * ======================================================= */
       let lastTouchEnd = 0;
 
-      // 1. 더블 클릭(더블 탭) 화면 확대 제어
+      // 1. [추가] 터치가 시작되는 순간 두 손가락 핀치 및 연속 터치 가속도 계산 차단
+      document.documentElement.addEventListener(
+        "touchstart",
+        (event) => {
+          // 두 손가락 이상으로 화면을 벌려 확대하는 행위 차단
+          if (event.touches.length > 1) {
+            event.preventDefault();
+          }
+
+          // 더블 클릭 타이밍에 스크롤 가속도가 붙는 버그 제어
+          const now = new Date().getTime();
+          if (now - lastTouchEnd <= 300) {
+            const targetTag = event.target.tagName;
+            if (
+              targetTag !== "INPUT" &&
+              targetTag !== "TEXTAREA" &&
+              targetTag !== "SELECT"
+            ) {
+              // 팝업이나 이미지 클릭 시 화면이 위아래로 출렁이는 브라우저 기본 연산 취소
+              event.preventDefault();
+            }
+          }
+        },
+        { passive: false },
+      );
+
+      // 2. 터치가 끝나는 순간 화면 확대 최종 차단 (기존 로직 유지 및 보완)
       document.documentElement.addEventListener(
         "touchend",
         (event) => {
           const now = new Date().getTime();
           if (now - lastTouchEnd <= 300) {
             const targetTag = event.target.tagName;
-            // 사용자가 타이핑해야 하는 입력창이 아닐 때만 브라우저의 강제 확대 차단
             if (
               targetTag !== "INPUT" &&
               targetTag !== "TEXTAREA" &&
@@ -22,4 +47,4 @@
           lastTouchEnd = now;
         },
         { passive: false },
-      ); // preventDefault()를 정상 동작시키기 위해 false 필수</script><script defer="defer" src="/vue-hello/js/chunk-vendors.9eca2a64.js"></script><script defer="defer" src="/vue-hello/js/app.d12b801e.js"></script></head><body><noscript><strong>We're sorry but vue-hello doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
+      );</script><script defer="defer" src="/vue-hello/js/chunk-vendors.9eca2a64.js"></script><script defer="defer" src="/vue-hello/js/app.159e9117.js"></script></head><body><noscript><strong>We're sorry but vue-hello doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
