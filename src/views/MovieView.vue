@@ -105,11 +105,6 @@ export default {
   mounted() {
     // 컴포넌트가 마운트될 때 실행되는 로직
     console.log("MovieView 컴포넌트가 마운트되었습니다.");
-
-    document.documentElement.addEventListener("touchend", this.preventIosZoom, {
-      passive: false,
-    });
-
     this.interval = setInterval(() => {
       this.eventTextNum += 1;
       if (this.eventTextNum >= this.eventText.length) {
@@ -122,11 +117,6 @@ export default {
     // 컴포넌트가 언마운트될 때 실행되는 로직
     console.log("MovieView 컴포넌트가 언마운트되었습니다.");
     clearInterval(this.interval);
-
-    document.documentElement.removeEventListener(
-      "touchend",
-      this.preventIosZoom,
-    );
   },
 };
 </script>
