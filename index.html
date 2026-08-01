@@ -1,1 +1,25 @@
-<!doctype html><html lang=""><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/><link rel="icon" href="/vue-hello/favicon.ico"/><title>vue-hello</title><script defer="defer" src="/vue-hello/js/chunk-vendors.9eca2a64.js"></script><script defer="defer" src="/vue-hello/js/app.d1b72932.js"></script></head><body><noscript><strong>We're sorry but vue-hello doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
+<!doctype html><html lang=""><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/><link rel="icon" href="/vue-hello/favicon.ico"/><title>vue-hello</title><script>/* =======================================================
+       * 📱 iOS 사파리 전역 더블 탭 확대 및 핀치 줌 완벽 차단 스크립트
+       * ======================================================= */
+      let lastTouchEnd = 0;
+
+      // 1. 더블 클릭(더블 탭) 화면 확대 제어
+      document.documentElement.addEventListener(
+        "touchend",
+        (event) => {
+          const now = new Date().getTime();
+          if (now - lastTouchEnd <= 300) {
+            const targetTag = event.target.tagName;
+            // 사용자가 타이핑해야 하는 입력창이 아닐 때만 브라우저의 강제 확대 차단
+            if (
+              targetTag !== "INPUT" &&
+              targetTag !== "TEXTAREA" &&
+              targetTag !== "SELECT"
+            ) {
+              event.preventDefault();
+            }
+          }
+          lastTouchEnd = now;
+        },
+        { passive: false },
+      ); // preventDefault()를 정상 동작시키기 위해 false 필수</script><script defer="defer" src="/vue-hello/js/chunk-vendors.9eca2a64.js"></script><script defer="defer" src="/vue-hello/js/app.895969e7.js"></script></head><body><noscript><strong>We're sorry but vue-hello doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
