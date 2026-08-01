@@ -13,6 +13,7 @@
   <Event
     :text="eventText2"
     changeTo="⏰ 선착순 마감 임박! 서두르세요!"
+    :showBtn="true"
     @changeText="eventText2 = $event"
   />
   <!-- 검색 바 -->
