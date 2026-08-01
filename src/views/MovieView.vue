@@ -105,6 +105,11 @@ export default {
   mounted() {
     // 컴포넌트가 마운트될 때 실행되는 로직
     console.log("MovieView 컴포넌트가 마운트되었습니다.");
+
+    document.documentElement.addEventListener("touchend", this.preventIosZoom, {
+      passive: false,
+    });
+
     this.interval = setInterval(() => {
       this.eventTextNum += 1;
       if (this.eventTextNum >= this.eventText.length) {
@@ -117,6 +122,11 @@ export default {
     // 컴포넌트가 언마운트될 때 실행되는 로직
     console.log("MovieView 컴포넌트가 언마운트되었습니다.");
     clearInterval(this.interval);
+
+    document.documentElement.removeEventListener(
+      "touchend",
+      this.preventIosZoom,
+    );
   },
 };
 </script>
@@ -125,14 +135,6 @@ export default {
 * {
   box-sizing: border-box;
   margin: 0;
-}
-html,
-body,
-button,
-a,
-div {
-  /* 세로/가로 스크롤은 허용하되, 더블 탭 확대(double-tap zoom)만 차단 */
-  touch-action: manipulation;
 }
 body {
   max-width: 768px;
