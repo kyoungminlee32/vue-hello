@@ -41,6 +41,9 @@ export default {
   align-items: center;
   display: none;
 }
+.event p {
+  flex: 1;
+}
 .show {
   display: flex;
 }
