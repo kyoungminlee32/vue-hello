@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "es6",
     "module": "esnext",
-    "ignoreDeprecations": "5.0",
+    "ignoreDeprecations": "6.0",
+    "baseUrl": "./",
     "moduleResolution": "node",
     "paths": {
       "@/*": ["src/*"]
