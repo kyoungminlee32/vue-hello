@@ -3,7 +3,6 @@
     "target": "es6",
     "module": "esnext",
     "ignoreDeprecations": "5.0",
-    "baseUrl": "./",
     "moduleResolution": "node",
     "paths": {
       "@/*": ["src/*"]
